@@ -1,51 +1,34 @@
-# GOSSIP PROJECT : GOING LIVE !
+# THE GOSSIP PROJECT
 
-## The Hacking Project - Bootcamp Fullstack Web
-### Semaine 5, jour 4.
+## Projet validant du 28 Octobre 2019
 
-> On améliore encore notre capacité à répandre des rumeurs. Comme ça ensuite on pourra les retweeter à plein de journalistes.
+Nous allons commencer aujourd'hui par créer les premières pages :
 
+La page d'accueil, bien entendu. Cette page d'accueil affichera tous les potins créés
+La page qui présente l'équipe de The Gossip Project, aka toi et ton binome
+La page de contact où tu vas balancer une superbe adresse de contact
+Une page de bienvenue, qui accueille l'utilisateur en fonction du nom passé dans l'URL
+Dans la page d'accueil, il sera possible de cliquer sur chaque potin pour en "Voir plus", ce qui aura pour effet d'aller sur la page du potin.
 
-L'app ne fait rien pour l'instant. Elle contient une base de données qui (normalement) répond aux critères de l'exercice.
+Enfin, puisque c'est toi, nous allons mettre du CSS dans le site, grâce notamment à Bootstrap.
 
-
-***
-
-## Fonctionnalités présentes
-
-* BDD organisée selon les consignes (jusque messages privés)
-* `seed.rb` permettant de remplir la BDD
 
 ***
 
 ## Installation
 Cloner le repository : 
 ~~~bash
-$ git clone https://github.com/gaael/gossip-project.git
+$ git clone https://github.com/julietteptps.the_gossip_project
 ~~~
 Ou télécharger sa version compressée puis l'extraire.
 
-Se placer dans le dossier `gossip-project-master`. Installer les gemmes nécessaires (via *Bundler*)
+Se placer dans le dossier. Installer les gemmes nécessaires (via *Bundler*)
 ~~~bash
 $ cd path/to/gossip-project-master
 $ bundle install
 ~~~
 
-Remplir la BDD à partir de `seeds.rb`
-~~~bash
-$ rails db:seed
-~~~
-
-Lancer la *console Rails* pour pouvoir accéder à et expérimenter avec la BDD
-~~~bash
-$ rails c
-~~~
-
-Une fois dans la console, penser à appeler `table_print` 
-~~~ruby
-> require 'table_print'
- => true
-~~~
+Se promener dans le code, sur le serveur etc.
 
 
 ***
@@ -83,34 +66,4 @@ end
 
 ***
 
-## Testing
-
-Fait avec des chaînages d'appels à la BDD dans `rails console`. Par exemple
-
-~~~ruby
-> tp User.last.city.users.first.sent_messages.first.recipients.first.gossips.last.tags
-# should return a tag
-# not all users have messages or gossips, this command should be tested step by step
-
-> tp City.first.users.last.gossips.first.comments.last.likes.first.id
-# should return an integer if it was tested step by step
-~~~
-
-***
-
-## Historique des versions
-
-* version 1.00 : fonctionne avec private messages
-* version 0.50 : fonctionne avec cities, users, gossips et tags
-* version 0.00 : repo init
-
-***
-
-## Credits
-Les ressources de [The Hacking Project](https://www.thehackingproject.org/)\
-Les [guides de Rails](https://guides.rubyonrails.org/index.html)
-
-
-## Meta
-Gaël Dubois - [Twitter](https://twitter.com/GalDUBOIS1) - [GitHub](https://github.com/gaael/)\
-Distribué sous license GNU-GPLv3. Voir `LICENCE.txt` pour plus d'informations.
+Juliette Petit-Pas, @julietteptps
