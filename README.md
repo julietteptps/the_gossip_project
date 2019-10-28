@@ -18,7 +18,7 @@ Enfin, puisque c'est toi, nous allons mettre du CSS dans le site, grâce notamme
 ## Installation
 Cloner le repository : 
 ~~~bash
-$ git clone https://github.com/julietteptps.the_gossip_project
+$ git clone https://github.com/julietteptps/the_gossip_project
 ~~~
 Ou télécharger sa version compressée puis l'extraire.
 
